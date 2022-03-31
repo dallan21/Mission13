@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{0968FBDA-E8E6-43CC-A21C-D16AE2CC6D00}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mission13/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="Mission13/Views/Home/Index.cshtml" Line="23" Column="18" />
+      <File FileName="Mission13/Components/TeamViewComponent.cs" />
+      <File FileName="Mission13/Controllers/HomeController.cs" Line="107" Column="33" />
+      <File FileName="Mission13/Models/EFBowlerRepository.cs" Line="37" Column="6" />
+      <File FileName="Mission13/Models/EFTeamRepository.cs" />
+      <File FileName="Mission13/Models/IBowlerRepository.cs" Line="18" Column="2" />
+      <File FileName="Mission13/Models/Bowler.cs" Line="1" Column="1" />
+      <File FileName="Mission13/Models/BowlerDbContext.cs" Line="1" Column="1" />
+      <File FileName="Mission13/Models/ViewModel/BowlerViewModel.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Mission13" expanded="True">
+            <Node name="Mission13" expanded="True">
+              <Node name="Components" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True">
+                <Node name="ViewModel" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Mission13 PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

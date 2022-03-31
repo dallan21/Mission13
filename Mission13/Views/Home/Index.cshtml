@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model BowlerViewModel
+<div class="bg-dark text-white p-2 text-center">
+
+
+    <div class="navbar-brand m-lg-2 text-center">Bowler Contact List</div>
+
+
+
+</div>
+
+<div class="bg-dark text-white p-2 m-1 text-center">
+    <div class="row p-1 m-1">
+        <div id="teams" class="navbar-brand m-lg-2 text-center">
+            <a class="btn btn-secondary" asp-action="Index" asp-route-team="">Home</a>
+            @foreach ( var t in ViewBag.Teams)
+                {
+                    <a class="btn @(ViewBag.SelectedType == t ? "btn-primary" : "btn-outline-secondary")"
+                       asp-action="Index" asp-route-team="@t.TeamId">@t.TeamName</a>
+                }
+
+        </div>
+
+    </div>
+</div>
+<div class="row m-1">
+    <table class="table table-sm table-striped table-bordered">
+        <thead>
+            <tr>
+                <td>BowlerId</td>
+                <td>Bowler First Name</td>
+                <td>Bowler Middle Init</td>
+                <td>Bowler Last Name</td>
+                <td>Bowler Address</td>
+                <td>Bowler City</td>
+                <td>Bowler State</td>
+                <td>Bowler Zip</td>
+                <td>Bowler Phone Number</td>
+                <td>Team Id</td>
+                <td>Edit</td>
+                <td>Delete</td>
+            </tr>
+        </thead>
+
+        @foreach (var b in Model.Bowlerss)
+        {
+            <tr>
+                <td>@b.BowlerId</td>
+                <td>@b.BowlerFirstName</td>
+                <td>@b.BowlerMiddleInit</td>
+                <td>@b.BowlerLastName</td>
+                <td>@b.BowlerAddress</td>
+                <td>@b.BowlerCity</td>
+                <td>@b.BowlerState</td>
+                <td>@b.BowlerZip</td>
+                <td>@b.BowlerPhoneNumber</td>
+                <td>@b.TeamId</td>
+                <td><a asp-controller="Home" asp-action="Edit" asp-route-id="@b.BowlerId" class="btn btn-outline-warning">Edit</a></td>
+                <td><a asp-controller="Home" asp-action="Delete" asp-route-id="@b.BowlerId" class="btn btn-outline-danger">Delete</a></td>
+            </tr>
+        }
+
+    </table>
+
+    <a class="btn btn-primary" asp-controller="Home" asp-action="Add">Add New Bowler</a>
+</div>
