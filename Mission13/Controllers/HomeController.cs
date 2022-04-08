@@ -31,7 +31,7 @@ namespace Mission13.Controllers
                 
                 Bowlerss = _repo.Bowlers
                     .Where(b => b.TeamId == team || team == null)
-                    .OrderBy(b => b.TeamId)
+                    .OrderBy(b => b.BowlerId)
                     
             };
 

@@ -1,12 +1,11 @@
 ﻿<Properties StartupConfiguration="{0968FBDA-E8E6-43CC-A21C-D16AE2CC6D00}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Mission13/Models/EFBowlerRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mission13/Controllers/HomeController.cs">
     <Files>
       <File FileName="Mission13/Models/IBowlerRepository.cs" Line="1" Column="1" />
-      <File FileName="Mission13/Models/EFBowlerRepository.cs" Line="35" Column="1" />
-      <File FileName="Mission13/Models/BowlerDbContext.cs" />
-      <File FileName="Mission13/Components/TeamViewComponent.cs" />
-      <File FileName="Mission13/Controllers/HomeController.cs" />
-      <File FileName="Mission13/Models/EFTeamRepository.cs" />
+      <File FileName="Mission13/Models/EFBowlerRepository.cs" Line="41" Column="1" />
+      <File FileName="Mission13/Models/BowlerDbContext.cs" Line="1" Column="1" />
+      <File FileName="Mission13/Controllers/HomeController.cs" Line="34" Column="43" />
+      <File FileName="Mission13/Models/EFTeamRepository.cs" Line="1" Column="1" />
       <File FileName="Mission13/Models/Bowler.cs" />
       <File FileName="Mission13/Views/Home/Index.cshtml" />
       <File FileName="Mission13/Views/Home/Delete.cshtml" />
@@ -18,16 +17,10 @@
           <Node name="Mission13" expanded="True">
             <Node name="Mission13" expanded="True">
               <Node name="Components" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="ViewModel" expanded="True" />
-                <Node name="EFBowlerRepository.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
               </Node>
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True" />
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
