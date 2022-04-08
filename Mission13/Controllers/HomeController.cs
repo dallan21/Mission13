@@ -49,17 +49,18 @@ namespace Mission13.Controllers
             ViewBag.Teams = _repo2.Teams.ToList();
             ViewBag.Bowlers = _repo.Bowlers.ToList();
 
-            return View("AddBowlerForm");
+            return View(new Bowler());
         }
 
         [HttpPost]
-        public IActionResult Add(BowlerViewModel b)
+        public IActionResult Add(Bowler b)
         {
             if (ModelState.IsValid)
             {
                 _repo.AddBowler(b);
+                _repo.SaveBowler(b);
                 
-                return View("Index", b);
+                return RedirectToAction("Index");
             }
             else
             {
@@ -86,7 +87,7 @@ namespace Mission13.Controllers
         [HttpPost]
         public IActionResult Edit(Bowler b)
         {
-            
+            _repo.EditBowler(b);
             _repo.SaveBowler(b);
             return RedirectToAction("Index");
         }
@@ -101,7 +102,7 @@ namespace Mission13.Controllers
         }
 
         [HttpPost]
-        public IActionResult Delete(BowlerViewModel b)
+        public IActionResult Delete(Bowler b)
         {
 
             _repo.DeleteBowler(b);

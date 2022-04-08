@@ -10,9 +10,9 @@ namespace Mission13.Models
 
         public void SaveBowler(Bowler b);
 
+        public void EditBowler(Bowler b);
+        public void AddBowler(Bowler b);
 
-        public void AddBowler(BowlerViewModel b);
-
-        public void DeleteBowler(BowlerViewModel b);
+        public void DeleteBowler(Bowler b);
     }
 }

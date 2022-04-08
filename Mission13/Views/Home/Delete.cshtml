@@ -12,7 +12,7 @@
         <br />
         <div class="navbar-brand m-lg-2 text-center">Are you sure you want to delete @Model.BowlerFirstName @Model.BowlerLastName</div>
 
-        <form method="post" asp-action="DeleteBowler" asp-controller="Home">
+        <form method="post" asp-action="Delete" >
             <button class="btn btn-danger">Delete</button>
             <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Cancel</a>
 

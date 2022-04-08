@@ -29,6 +29,6 @@ namespace Mission13.Models
 
         public int TeamId { get; set; }
 
-        public Team Team { get; set; }
+        //public Team Team { get; set; }
     }
 }
